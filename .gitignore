@@ -1,0 +1,5 @@
+DS_Store
+node_modules/
+notes-app/.DS_Store
+notes-app/package-lock.json
+weather-app/package-lock.json
