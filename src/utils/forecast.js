@@ -24,7 +24,8 @@ const forecast = (latitude, longitude, callback) => {
             const daily = body.daily.data;
             const currently = body.currently;
 
-            callback(undefined, `${daily[0].summary} The temperature is currently ${currently.temperature}°C. There is a ${currently.precipProbability * 100}% change of rain.`);
+            callback(undefined, `${daily[0].summary} The temperature is currently ${currently.temperature}°C. There is a ${currently.precipProbability * 100}% change of rain.
+                                 The min temperature is ${daily[0].temperatureMin}°C and the maximum will be ${daily[0].temperatureMax}°C`);
         }
     })
 };
